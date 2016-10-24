@@ -1,1 +1,8 @@
 ---
+classes:
+  - dns::server
+
+dns::server::default::resolvconf: 'yes'
+dns::server::default::disable_zone_checking: 'yes'
+dns::server::default::enable_zone_write: 'yes'
+dns::server::default::enable_sdb: 'no'
